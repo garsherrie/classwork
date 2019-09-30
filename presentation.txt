@@ -1,0 +1,121 @@
+
+https://likegeeks.com/linux-file-system/
+
+https://www.howtogeek.com/117435/htg-explains-the-linux-directory-structure-explained/
+
+https://www.cyberciti.biz/faq/linux-check-disk-space-command/
+
+
+https://askubuntu.com/questions/911865/no-more-disk-space-how-can-i-find-what-is-taking-up-the-space
+
+Linux File System or any file system generally is a layer which is under the operating system that handles the positioning of your data on the storage, without it; the system cannot knows which file starts from where and ends where.
+
+Even if you find any unsupported file system type. You can even download software that can deal with it. So what are Linux file system types?
+
+When you try to install Linux you will see that Linux offers many file systems like these:
+
+Ext, Ext2, Ext3, Ext4, JFS, XFS, btrfs and swap
+
+So what are these file systems that Linux offers?
+
+Ext: an old one and no longer used due to limitations.
+
+Ext2: first Linux file system that allows 2 terabytes of data allowed.
+
+Ext3: came from Ext2, but with upgrades and backward compatibility.
+
+The only problem about it that the servers don’t use this kind of file system because this file system doesn’t support file recovery or disk snapshots.
+
+Ext4: faster and allow large files with significant speed.
+
+It is a very good option for SSD disks and you notice when you try to install any Linux distro that this one is the default file system that Linux suggests.
+
+JFS: old file system made by IBM. It works very well with small and big files, but it failed and files corrupted after long time use, reports say.
+
+XFS: old file system and works slowly with small files.
+
+Btrfs: made by Oracle. It is not stable as Ext in some distros, but you can say that it is a replacement for it if you have to. It has a good performance.
+
+You may notice From the comparison above  that Ext4 is the best Linux File System
+
+
+Top Level Explanation
+
+Now you know what Linux file system is and its types. So what is inside that filesystem, I mean from the top level.
+
+You may come from Windows, and Windows has partitions like C:\ and D:\, you can install Windows on any of these partitions, usually C:\.
+
+What about the Linux File System Structure?
+
+Well, if you navigate to the root partition which is / you’ll see the Linux File System Hierarchy.
+
+
+Linux File System Directories
+
+/bin: Where Linux core commands reside like ls, mv.
+
+/boot: Where boot loader and boot files are located.
+
+/dev: Where all physical drives are mounted like USBs DVDs.
+
+/etc: Contains configurations for the installed packages.
+
+/home: Where every user will have a personal folder to put his folders with his name like /home/likegeeks.
+
+/lib: Where the libraries of the installed packages located since libraries shared among all packages
+
+unlike windows, you may find duplicates in different folders.
+
+/media: Here is the external devices like DVDs and USB sticks are mounted and you can access their files from here.
+
+/mnt: Where you mount other things Network locations and some distros you may find your mounted USB or DVD.
+
+/opt: Some optional packages are located here and this is managed by the package manager.
+
+/proc: Because everything on Linux is a file, this folder for processes running on the system,
+
+and you can access them and see much info about the current processes.
+
+/root: The home folder for the root user.
+
+/sbin: Like /bin, but binaries here are for root user only.
+
+/tmp: Contains the temporary files.
+
+/usr: Where the utilities and files shared between users on Linux.
+
+/var: Contains system logs and other variable data.
+
+Now you have a good idea about what the Linux file system is.
+
+Choosing the right file system can lead you to the best performance, so choose the best.
+
+
+
+
+
+
+
+Linux command to check disk space
+
+    df command – Shows the amount of disk space used and available on Linux file systems.
+    du command – Display the amount of disk space used by the specified files and for each subdirectory.
+    btrfs fi df /device/ – Show disk space usage information for a btrfs based mount point/file system. Read more
+
+
+
+
+
+
+
+Each line of the display is made up of six columns.
+
+    Fileystem: The name of this filesystem.
+    1K-Blocks: The number of 1K blocks that are available on this filesystem.
+    Used: The number of 1K blocks that have been used on this file system.
+    Available: The number of 1K blocks that are unused on this file system.
+    Use%: The amount of space used in this file system given as a percentage.
+    File: The filesystem name, if specified on the command line.
+    Mounted on: The mount point of the filesystem.
+
+
